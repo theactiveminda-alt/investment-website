@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Solutions - Grow Your Wealth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i> Investment Hub
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#login" class="nav-link login-btn" onclick="openLoginModal()">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Grow Your Wealth With Confidence</h1>
+            <p>Strategic investment solutions tailored to your financial goals</p>
+            <button class="cta-button" onclick="openLoginModal()">Get Started Today</button>
+        </div>
+        <div class="hero-image">
+            <svg viewBox="0 0 400 300" class="chart-svg">
+                <rect width="400" height="300" fill="#f0f4f8"/>
+                <polyline points="50,250 100,200 150,180 200,150 250,120 300,100 350,80" stroke="#007bff" stroke-width="3" fill="none"/>
+                <circle cx="50" cy="250" r="4" fill="#007bff"/>
+                <circle cx="350" cy="80" r="4" fill="#28a745"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Investment Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-piggy-bank"></i>
+                </div>
+                <h3>Savings & Growth Plans</h3>
+                <p>Maximize your savings with our tailored growth plans designed to beat inflation and build long-term wealth.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3>Portfolio Management</h3>
+                <p>Expert portfolio diversification across stocks, bonds, real estate, and alternative investments for optimal returns.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Real Estate Investment</h3>
+                <p>Explore lucrative real estate opportunities with professional guidance and transparent transaction processes.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Financial Advisory</h3>
+                <p>Personalized financial planning and retirement strategies from our certified investment advisors.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Investment Education</h3>
+                <p>Learn investment fundamentals through webinars, workshops, and educational resources tailored for all levels.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Secure & Transparent</h3>
+                <p>Your investments are protected with industry-leading security measures and complete transparency in all dealings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Investment Portfolio Highlights</h2>
+        <div class="portfolio-stats">
+            <div class="stat-box">
+                <h3>$2.5B+</h3>
+                <p>Assets Under Management</p>
+            </div>
+            <div class="stat-box">
+                <h3>5000+</h3>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="stat-box">
+                <h3>18%</h3>
+                <p>Average Annual Returns</p>
+            </div>
+            <div class="stat-box">
+                <h3>25+</h3>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; margin-top: 50px; margin-bottom: 30px;">Our Top Investment Opportunities</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <svg viewBox="0 0 300 200" style="width:100%; height:200px;">
+                        <rect width="300" height="200" fill="#e8f4f8"/>
+                        <rect x="30" y="50" width="240" height="100" fill="#007bff" opacity="0.7"/>
+                        <text x="150" y="105" text-anchor="middle" font-size="24" fill="white" font-weight="bold">Tech Stocks</text>
+                    </svg>
+                </div>
+                <h4>Technology Sector Funds</h4>
+                <p>Invest in leading tech companies with high growth potential. Diversified portfolio of innovative startups and established tech giants.</p>
+                <div class="return-badge">15-20% ROI</div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <svg viewBox="0 0 300 200" style="width:100%; height:200px;">
+                        <rect width="300" height="200" fill="#f0e8f4"/>
+                        <polygon points="150,30 220,80 220,130 150,180 80,130 80,80" fill="#9c27b0" opacity="0.7"/>
+                        <text x="150" y="105" text-anchor="middle" font-size="24" fill="white" font-weight="bold">Real Estate</text>
+                    </svg>
+                </div>
+                <h4>Real Estate Portfolio</h4>
+                <p>Prime commercial and residential properties in high-growth markets. Generate stable rental income with capital appreciation.</p>
+                <div class="return-badge">12-16% ROI</div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <svg viewBox="0 0 300 200" style="width:100%; height:200px;">
+                        <rect width="300" height="200" fill="#f4e8e8"/>
+                        <circle cx="150" cy="100" r="60" fill="#dc3545" opacity="0.7"/>
+                        <text x="150" y="110" text-anchor="middle" font-size="22" fill="white" font-weight="bold">Bonds</text>
+                    </svg>
+                </div>
+                <h4>Fixed Income Securities</h4>
+                <p>Government and corporate bonds offering steady returns with lower risk. Ideal for conservative investors seeking stability.</p>
+                <div class="return-badge">6-9% ROI</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Investment Hub transformed my financial future. Their expert guidance helped me build a diversified portfolio that consistently outperforms expectations."</p>
+                <h4>Ahmed Hassan</h4>
+                <p class="role">Business Owner</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The transparency and professionalism of this team is unmatched. I feel confident that my investments are in capable hands."</p>
+                <h4>Fatima Al-Rashid</h4>
+                <p class="role">Corporate Executive</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Their investment education programs gave me the knowledge to make informed decisions. Highly recommend to anyone serious about wealth building."</p>
+                <h4>Mohammad Ali</h4>
+                <p class="role">Entrepreneur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:the.active.mind.a@gmail.com">the.active.mind.a@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/9647757091723" target="_blank">+964 775 709 1723</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Middle East Regional Office</p>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form class="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember"> Remember me
+                </div>
+                <button type="submit" class="login-submit">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#" onclick="toggleSignup()">Sign up here</a></p>
+            </form>
+            <div id="signupForm" class="signup-form" style="display:none;">
+                <h3>Create New Account</h3>
+                <form onsubmit="handleSignup(event)">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="login-submit">Create Account</button>
+                    <p class="login-link">Already have an account? <a href="#" onclick="toggleSignup()">Login here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Investment Hub</h4>
+                <p>Your trusted partner in wealth creation and financial growth.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Investment Hub. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
